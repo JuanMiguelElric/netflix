@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="netflix.css">
+   <title>Netflix</title>
+</head>
+<body>
+   <div class="backdrop"></div>
+
+   <nav  class="navbar navbar-dark bg-dark fixed-top" >
+      <button type="button" class="navbar-toggler d-lg-none " onclick="clickMenu()">
+         <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/pngaaa.com-2275920.png"
+         alt="Navbar Toggle Icon - Menu Hamburger Png White @clipartmax.com" style="width: 50px; ">
+
+      </button>
+      <a href="" class="navbar-brand flex-grow-1">
+         <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/pngwing.com%20(2).png" alt=""  class="my-1 mx-2">
+       
+      </a>
+      <ul class="nav text-white d-none d-lg-flex">
+         <li class="nav-item">
+            <a href="#" class="nav-link tex-reset d-none d-xl-flex " style="color: white;">Inicio</a>
+         </li>
+         <li class="nav-item">
+            <a href="#" class="nav-link tex-reset d-none d-xl-flex">series</a>
+         </li>
+         <li class="nav-item">
+            <a href="#" class="nav-link tex-reset d-none d-xl-flex">Filmes</a>
+         </li>
+         <li class="nav-item">
+            <a href="#" class="nav-link tex-reset d-none d-xl-flex">Adicionados recentemente</a>
+         </li>
+         <li class="nav-item">
+            <a href="#" class="nav-link tex-reset d-none d-xl-flex">Minha Lista</a>
+         </li>
+      </ul>
+      <form action="" class="form-inline">
+         <input type="search" class="form-control" placeholder="buscar">
+      </form>
+      <!--avatar depois da barra de busca em uma tela de alta resolução-->
+      <div class="media text-white p-2 d-none d-lg-flex">
+         <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/IMG_20221224_200450_604.png" class="mr-2" alt="">
+         <div class="media-body">
+            <p class="h6 m-0"> Juan Miguel</p>
+           
+         </div>
+      </div>
+      <!--id = itens é para ser utilizado em java script-->
+      <ul id="itens" class="list-unstyled font-weight-bold d-xl-none clickMenu  ">
+         <li class="media-avatar">
+            <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/IMG_20221224_200450_604.png" class="mr-2" alt="">
+            <div class="media-body">
+               <p class="h6 m-0"> Juan Miguel</p>
+               <small>Trocar de perfil</small>
+            </div>
+         </li>
+            
+         <li class="divider">
+            <li><a href="javascript:void(0)" ></a></li>
+            <li><a href="" class="text-reset">Inicio</a></li>
+            <li><a href="" class="text-reset">Minha lista</a></li>
+            <li><a href="" class="text-reset">séries de ação</a></li>
+            <li><a href="" class="text-reset">Ação aventura</a></li>
+            <li><a href="" class="text-reset">Série Teen</a></li>
+            <li><a href="" class="text-reset">Filmes Africano</a></li>
+            <li><a href="" class="text-reset">Séries da américa latina</a></li>
+            <li><a href="" class="text-reset">Animes</a></li>
+         </li>
+      </ul>
+   </nav>
+   <br>
+   <br>
+   <br>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-12 full-banner text-white">
+            <div class="p-4 d-flex justify-content-start align-itens h-100">
+               <div>
+
+                  <h1 class="h3"> Vingadores Ultimato</h1>
+                  <small class="d-flex my-2">
+   
+                     <span class="mr-3">
+                        2019
+                     </span>
+                     <span class="mr-3">12</span>
+                     <span>182min</span>
+                  </small>
+                  <p class="d-none d-lg-block"></p>
+                  <a href="" class="btn btn-danger text-uppercase font-weight-bold">Assistir</a>
+               </div>
+
+               
+            </div>
+         </div>
+      </div>
+      <div class="row no-gutters">
+         <div class="col-12">
+            <div class="p-3 list-titles">
+               <h2  class="h4">Adicionados recentemente:</h2>
+               <div class="d-flex flex-nowrap overflow-hidden">
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/b9e1d-captain-america-the-winter-soldier-2014-movie-banner-poster.jpg"  class="w-100" alt=" Capitão américa o primeiro vingador"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/Ozark-Season-4.jpg" class="w-100" alt=" Ozark"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/wednesday-full-trailer-1-banner-compressed-1024x537.jpg " class="w-100" alt=" Wednasday"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/greys%20anatomy.jpg" class="w-100" alt="greys anatomy"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/wednesday-full-trailer-1-banner-compressed-1024x537.jpg" class="w-100" alt=""></a>
+                  <a href="" class="px-1 my-3"> <img src=" file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/guardi%C3%A3o%20das%20gal%C3%A1xias.jpeg" class="w-100" alt="guardians of galaxy"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row no-gutters">
+         <div class="col-12">
+            <div class="p-3 list-titles">
+               <h2 class="h4">Em Alta:</h2>
+               <div class="d-flex flex-nowrap overflow-hidden">
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/wednesday-full-trailer-1-banner-compressed-1024x537.jpg" class="w-100" alt=""></a>
+                  <a href="" class="px-1 my-3"> <img src=" file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/guardi%C3%A3o%20das%20gal%C3%A1xias.jpeg" class="w-100" alt="guardians of galaxy"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/indiana%20jones.jpeg" class="w-100" alt="idndiana jones"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/oe%20menino%20que%20descobriu%20o%20vento.jpg" class="w-100" alt=" o menino que descobriu o vento"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/WoWBanner.jpg" class="w-100" alt="wow"></a>
+                  <a href="" class="px-1 my-3"> <img src=" file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/guardi%C3%A3o%20das%20gal%C3%A1xias.jpeg" class="w-100" alt="guardians of galaxy"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row no-gutters">
+         <div class="col-12">
+            <div class="p-3 list-titles">
+               <h2 class="h4">Continue assistindo: <br> <span class="text-uppercase">Juan Miguel</span></h2>
+               <div class="d-flex flex-nowrap overflow-hidden">
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/wednesday-full-trailer-1-banner-compressed-1024x537.jpg" class="w-100" alt=""></a>
+                  <a href="" class="px-1 my-3"> <img src=" file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/guardi%C3%A3o%20das%20gal%C3%A1xias.jpeg" class="w-100" alt="guardians of galaxy"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/oe%20menino%20que%20descobriu%20o%20vento.jpg" class="w-100" alt=" o menino que descobriu o vento"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/indiana%20jones.jpeg" class="w-100" alt="idndiana jones"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/um%20amor%20para%20recordar.jpeg" class="w-100" alt="um amor para recordar"></a>
+                  <a href="" class="px-1 my-3"> <img src="file:///C:/Users/Juanc/OneDrive/%C3%81rea%20de%20Trabalho/Netflix/imagens/b9e1d-captain-america-the-winter-soldier-2014-movie-banner-poster.jpg"  class="w-100" alt=" Capitão américa o primeiro vingador"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+    </div>
+    <footer class="row no-gutters p-4">
+      <a href="" class=" col-12 col-md-3 text-reset">Termos de uso</a>
+      <a href="" class="col-12 col-md-3 text-reset">Declaração de privacidade</a>
+      <a href="" class="col-12 col-md-3 text-reset">Preferência de cookies</a>
+      <a href="" class="col-12 col-md-3 text-reset">Centro de ajuda</a>
+    </footer>
+   <script>
+      //função utilizada para fazer um toggle 
+      function clickMenu() {
+         if (itens.style.display == 'block'){
+            itens.style.display = 'none'
+         } else{
+            itens.style.display ='block'
+         }
+      };
+   </script>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>  
+</body>
+</html>
